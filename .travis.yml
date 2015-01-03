@@ -4,6 +4,7 @@ rvm:
   - 1.9.3
   - 2.0.0
   - 2.1
+  - 2.2.0
   - rbx-2
   - ruby-head
 
@@ -16,6 +17,7 @@ gemfile:
   - gemfiles/activerecord_3.2.gemfile
   - gemfiles/activerecord_4.0.gemfile
   - gemfiles/activerecord_4.1.gemfile
+  - gemfiles/activerecord_4.2.gemfile
   - gemfiles/activerecord_edge.gemfile
 
 sudo: false
@@ -36,7 +38,11 @@ matrix:
       - rvm: 1.9.3
         gemfile: gemfiles/activerecord_4.1.gemfile
       - rvm: 1.9.3
+        gemfile: gemfiles/activerecord_4.2.gemfile
+      - rvm: 1.9.3
         gemfile: gemfiles/activerecord_edge.gemfile
+      - rvm: 2.2.0
+        gemfile: gemfiles/activerecord_3.2.gemfile
       - rvm: rbx-2
         gemfile: gemfiles/activerecord_3.2.gemfile
       - rvm: ruby-head
@@ -45,3 +51,5 @@ matrix:
         gemfile: gemfiles/activerecord_4.0.gemfile
       - rvm: ruby-head
         gemfile: gemfiles/activerecord_4.1.gemfile
+      - rvm: ruby-head
+        gemfile: gemfiles/activerecord_4.2.gemfile

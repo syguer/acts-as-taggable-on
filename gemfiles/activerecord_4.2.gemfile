@@ -2,8 +2,8 @@
 
 source "https://rubygems.org"
 
-gem "railties", ">= 4.2.0.beta1"
-gem "activerecord", ">= 4.2.0.beta1"
+gem "railties", ">= 4.2.0"
+gem "activerecord", ">= 4.2.0"
 gem "rack", ">= 1.6.0.beta"
 
 group :local_development do
